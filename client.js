@@ -22,9 +22,23 @@ const connect = function() {
     console.log("Server says: ", data);
   });
 
+  // conn.on("connect", () => {
+  //   conn.write("Move: up");
+  // });
+
+  // conn.on("connect", () => {
+  //   conn.write("Move: down");
+  // });
+
+  // conn.on("connect", () => {
+  //   conn.write("Move: left");
+  // });
+
+  // conn.on("connect", () => {
+  //   conn.write("Move: right");
+  // });
+
   return conn;
 };
-
-connect();
 
 module.exports = connect;
