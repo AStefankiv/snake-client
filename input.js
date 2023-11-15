@@ -1,4 +1,5 @@
 let connection;
+const MOVE_UP_KEY = require("./constants").MOVE_UP_KEY;
 
 const setupInput = function(conn) {
   connection = conn;
@@ -15,7 +16,7 @@ const handleUserInput = function(key) {
     console.log("Exit!");
     process.exit();
   }
-  if (key === 'w') {
+  if (key === MOVE_UP_KEY) {
     connection.write("Move: up");
   }
   if (key === 'a') {
